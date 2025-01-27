@@ -29,17 +29,17 @@ git clone https://github.com/cankarakus7744/phplogin.git
 
 3. Start the XAMPP control panel and ensure that Apache and MySQL are running.
 
-4. Navigate to "localhost/phpmyadmin/" in your browser and create a database named "database1".
-
-5. Within "database1" create a table named "login":
+4. Navigate to "localhost/phpmyadmin/" in your browser and create the following query.
 ```
+CREATE DATABASE `database1`;
+USE `database1`;
 CREATE TABLE `login` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
 );
 ```
  >Database name has to be "database1". Otherwise change db_name inside of "connection.php" accordingly.
 
-6. Navigate to "localhost/phplogin/" in your browser.
+5. Navigate to "localhost/phplogin/" in your browser.
