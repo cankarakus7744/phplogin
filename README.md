@@ -18,15 +18,19 @@ This is a simple PHP login system that allows users to register, log in, and log
 - XAMPP or any other local server environment
 
 
-## Usage Tutorial
+## Usage
 
 1. Locate "htdocs" directory of XAMPP.
+
 2. Clone the repository or download the source code into said directory.
 ```bash
-git clone https://github.com/yourusername/phplogin.git
+git clone https://github.com/cankarakus7744/phplogin.git
 ```
+
 3. Start the XAMPP control panel and ensure that Apache and MySQL are running.
+
 4. Navigate to "localhost/phpmyadmin/" in your browser and create a database named "database1".
+
 5. Within "database1" create a table named "login":
 ```
 CREATE TABLE `login` (
@@ -36,5 +40,6 @@ CREATE TABLE `login` (
   PRIMARY KEY (`id`)
 );
 ```
-Database name has to be "database1". Otherwise change db_name inside of "connection.php" accordingly.
+ >Database name has to be "database1". Otherwise change db_name inside of "connection.php" accordingly.
+
 6. Navigate to "localhost/phplogin/" in your browser.
